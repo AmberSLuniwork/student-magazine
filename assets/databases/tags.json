@@ -1,0 +1,14 @@
+[
+    {
+        "tagID": 1,
+        "name": "Student Life"
+    },
+    {
+        "tagID": 2,
+        "name": "Productivity"
+    },
+    {
+        "tagID": 3,
+        "name": "Campus News"
+    }
+]
