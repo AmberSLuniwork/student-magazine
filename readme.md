@@ -1,0 +1,13 @@
+# How to run this project
+To run this project:
+- Install the Live Server extension for VScode.
+- Download the project and open it in vscode.
+- Right click the index.html file and select 'open in live server'. 
+The project should then open into your browser.
+
+## How to test preexisting Admin, Writer and Reader accounts
+To view the project as an administrator of the website, log in using the email "admin@example.com" and the password "adminpassword".
+
+To view the project as a writer, use "johnD@example.com" and "writerpassword".
+
+To view the project as a logged in reader, use "janeD@example.com" and "readerpassword".

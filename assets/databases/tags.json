@@ -10,5 +10,33 @@
     {
         "tagID": 3,
         "name": "Campus News"
+    },
+    {
+        "tagID": 4,
+        "name": "Mental Health"
+    },
+    {
+        "tagID": 5,
+        "name": "Societies"
+    },
+    {
+        "tagID": 6,
+        "name": "Events"
+    },
+    {
+        "tagID": 7,
+        "name": "Sustainability"
+    },
+    {
+        "tagID": 8,
+        "name": "Opinions"
+    },
+    {
+        "tagID": 9,
+        "name": "Food"
+    },
+    {
+        "tagID": 10,
+        "name": "Fashion"
     }
 ]

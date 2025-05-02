@@ -1,8 +1,8 @@
 [
     {
         "userID" : 1,
-        "name": "Amber Sudworth-Lee",
-        "email": "AmberSL@example.com",
+        "name": "Admin",
+        "email": "Admin@example.com",
         "password": "adminpassword",
         "accountDate" : "2024-01-10",
         "isWriter" : false,
@@ -19,9 +19,9 @@
     },
     {
         "userID" : 3,
-        "name": "Courtney Gears",
-        "email": "CourtneyG@example.com",
-        "password": "password",
+        "name": "Jane Doe",
+        "email": "JaneD@example.com",
+        "password": "readerpassword",
         "accountDate" : "2024-01-10",
         "isWriter" : false,
         "isAdmin" : false

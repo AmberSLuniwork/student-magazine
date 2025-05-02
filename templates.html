@@ -15,21 +15,36 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&display=swap');
     </style>
-    <title>Template tests</title>
+    <title>Testing, testing, 123</title>
 </head>
 <body>
+    <!--nav template-->
     <nav>
         <a id="thezine" href="index.html">The Zine</a>
         <ul class="nodeco navlinks">
             <li>
-                What's on this month
+                <a href="categories/whatson.html">
+                    Events
+                </a>
+            </li>
+            <li>
+                <a href="categories/music.html">
+                    Music
+                </a>
+            </li>
+            <li>
+                <a href="categories/studentlife.html">
+                    Student Life
+                </a>
             </li>
             <li>Search by tags</li>
-            <li>
-                Submit your article
-            </li>
         </ul>
-        <button id="login">Log In</button>
+        <a href="submitarticle.html">Submit an article</a>
+        <div id="profilesection">
+            <p class="welcomeuser">Hi name!</p>
+            <a class="logbutton" id="login" href="login.html">Log In</a>
+            <a class="logbutton" id="logout" href="login.html">Log Out</a>
+        </div>
     </nav>
     <main>
         <section style="height: 200vh;">
@@ -41,9 +56,10 @@
             <h6>Heading 6</h6>
             <p>This is a paragraph. This also uses Inter</p>
             <p class="small">This is small text. It will be used for publishing dates, author information and article tags.</p>
-            <button>This also uses league gothic.</button>
+            <button>This also uses Inter, but some use League Gothic.</button>
         </section>
     </main>
+    <!--footer template-->
     <footer>
         This is a footer.
     </footer>
