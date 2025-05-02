@@ -1,0 +1,7 @@
+@media (prefers-reduced-motion: reduce){
+    *{
+        animation: none;
+        /*parallax can cause motion sickness*/
+        background-attachment: scroll;
+    }
+}

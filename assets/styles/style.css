@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+main, footer{
+    margin-left: 175px;
+    padding: 25px 5%;
+}
+body{
+    background-color: #fff ;
+}
+nav, nav *{
+    margin-left: 0;
+}
+nav{
+    position: fixed;
+    display: grid;
+    grid-template-rows: 50% 2fr 1fr;
+    justify-content: space-between;
+    place-items: center;
+    left: 0px;
+
+    background-color: black;
+    color: white;
+    height: 100vh;
+    width: 175px;
+    text-align: center;
+    overflow: hidden;
+}
+.navlinks{
+    padding: 0
+}
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 0
+}
+nav ul li{
+    padding: 10px 0;
+}
+
+/*fonts*/
+    /*font families*/
+    #epictext, h1, nav{
+        font-family: 'League Gothic';
+    }
+    h2, h3, h4, h5, p, a, button{
+        font-family: 'Inter';
+    }
+    h6, .small{
+        font-family: 'IBM Plex Mono';
+    }
+    /*font sizes*/
+    h1{
+        text-transform: uppercase;
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4, nav{
+        font-size: 1.7rem;
+    }
+    h5, #login{
+        font-size: 1.3rem;
+    }
+    h6{
+        font-style: italic;
+        font-size: 1rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: 1.2rem;
+    }
+    .small{
+        font-weight: light;
+        font-size: .8rem;
+    }
+    /*special text - logo, lists etc*/
+    .nodeco{
+        text-decoration: none;
+        list-style: none;
+    }
+    #thezine{
+        text-align: left;
+        font-size: 90px;
+        line-height: 175px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        writing-mode: vertical-rl;
+        text-orientation: sideways;
+        color: white;
+        text-transform: uppercase;
+        transform: rotate(180deg) scaleX(3);
+    }
+/*buttons*/
+#login{
+    aspect-ratio: 3/1;
+    width: 150px;
+}
