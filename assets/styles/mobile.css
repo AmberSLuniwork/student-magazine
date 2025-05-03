@@ -1,0 +1,43 @@
+@media screen and (max-width: 768px) {
+    /*menu adjustments*/
+    main, footer{
+        margin-left: 40px;
+    }
+    footer{
+        flex-direction: column;
+    }
+    nav{
+        z-index: 10;
+        transform: translateX(-175px);
+        width: 215px;
+        grid-template-columns: 3fr 40px;
+        grid-template-rows: 50% 2fr 1fr 1fr; /*order should be: logo, content, search, login.*/
+    }
+    #navToggle, #navToggle *{
+        display: block;
+    }
+    nav.open nav *:not(#navToggle){
+        display: block;
+    }
+    nav *, #thezine{
+        display: none;
+    }
+    #thezine{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    #navToggle{
+        grid-row: span 5;
+        grid-column: 2;
+        display: block;
+    }
+    nav.open{
+        transform: translateX(0);
+    }
+    nav.open *{
+        display: block;
+    }
+    nav.open #thezine{
+        display: block;
+    }
+}

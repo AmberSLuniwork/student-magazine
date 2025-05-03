@@ -9,10 +9,39 @@
 .show{
     opacity: 1;
 }
+main, footer{
+    transition: ease 0.5s;
+}
+nav{
+    transition: ease 0.5s;
+}
+nav .logbutton{
+    transition: ease 0.2s;
+    
+}
 
-nav ul li:hover{
+nav ul li:hover, .submenu:hover, nav a:not(#thezine):not(.logbutton):hover{
     background-color: #ad0000;
     transform: scale(1.1);
     letter-spacing: 1px;
-    transition: 0.1s;
+    transition: 0.2s;
+}
+nav .logbutton:hover{
+    background-color: rgb(117, 117, 117);
+    cursor: pointer;
+}
+#thezine{
+    transition: 0.1s ease-in;
+}
+#thezine:hover{
+    letter-spacing: 5px;
+}
+
+/*buttons*/
+#navToggle{
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+#navToggle.flip{
+    transform:scaleX(-1);
 }

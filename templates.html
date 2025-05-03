@@ -10,7 +10,6 @@
     <!--Scripts-->
     <script defer src="/assets/scripts/animations.js"></script>
     <script defer src="/assets/scripts/buttons.js"></script>
-    <script defer src="/assets/scripts/login.js"></script>
     <!--Font imports-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&display=swap');
@@ -20,30 +19,40 @@
 <body>
     <!--nav template-->
     <nav>
+        <button id="navToggle"><img src="assets/images/icons/chevron_forward_40dp_E3E3E3_FILL0_wght400_GRAD0_opsz40.svg"></button>
         <a id="thezine" href="index.html">The Zine</a>
-        <ul class="nodeco navlinks">
-            <li>
-                <a href="categories/whatson.html">
-                    Events
-                </a>
-            </li>
-            <li>
-                <a href="categories/music.html">
-                    Music
-                </a>
-            </li>
-            <li>
-                <a href="categories/studentlife.html">
-                    Student Life
-                </a>
-            </li>
-            <li>Search by tags</li>
-        </ul>
-        <a href="submitarticle.html">Submit an article</a>
-        <div id="profilesection">
-            <p class="welcomeuser">Hi name!</p>
-            <a class="logbutton" id="login" href="login.html">Log In</a>
-            <a class="logbutton" id="logout" href="login.html">Log Out</a>
+        <div id="linkssection" style="border-top: white solid 1px;">
+            <ul class="nodeco navlinks">
+                <li>
+                    <a href="/categories/whatson.html">
+                        Events
+                    </a>
+                </li>
+                <li>
+                    <a href="/categories/studentlife.html">
+                        Student Life
+                    </a>
+                </li>
+                <li>
+
+                </li>
+                <li style="margin-bottom: 1rem;">
+                    <a href="/categories/music.html">
+                        Music
+                    </a>
+                </li>
+                <li>
+                    <p class="submenu">Search by tags</p>
+                </li>
+            </ul>
+        </div>
+        <div id="tasksection" style="border-top: white solid 1px;">
+            <a href="writer/submitarticle.html">Submit an article</a>
+        </div>
+        <div id="profilesection" style="border-top: white solid 1px;">
+            <p id="welcomeUser"></p>
+            <a class="logbutton" id="loginButton" href="login.html">Log In</a>
+            <button class="logbutton" id="logoutButton">Log Out</button>
         </div>
     </nav>
     <main>
@@ -61,7 +70,57 @@
     </main>
     <!--footer template-->
     <footer>
-        This is a footer.
+        <section>
+            <p>Popular categories</p>
+            <ul class="nodeco small">
+                <li>
+                    Student Life
+                </li>
+                <li>
+                    Events
+                </li>
+                <li>
+                    Music
+                </li>
+                <li>
+                    Food
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>The Zine</p>
+            <ul class="nodeco small">
+                <li>
+                    Submit an article
+                </li>
+                <li>
+                    Subscribe to The Zine
+                </li>
+                <li>
+                    Contact us
+                </li>
+                <li>
+                    Privacy Policy
+                </li>
+            </ul>
+        </section>
+        <section>
+            <p>Who made this?</p>
+            <ul class="nodeco small">
+                <li>
+                    Copyright&copy; 2025 Amber Sudworth-Lee
+                </li>
+                <li>
+                    This is my final year project for my degree in Web Design and Development.
+                </li>
+                <li>
+                    You can find my portfolio (and other projects) <a href="">here.</a>
+                </li>
+                <li>
+                    <a href="">View image credits</a>
+                </li>
+            </ul>
+        </section>
     </footer>
 </body>
 </html>

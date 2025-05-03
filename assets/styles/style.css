@@ -3,9 +3,11 @@
     margin: 0;
     box-sizing: border-box;
 }
+button{
+    border: none;
+}
 main, footer{
     margin-left: 175px;
-    padding: 25px 5%;
 }
 body{
     background-color: #fff ;
@@ -14,20 +16,21 @@ body{
     nav, nav *{
         margin-left: 0;
     }
+
     nav{
         position: fixed;
         display: grid;
-        grid-template-rows: 50% 2fr 1fr;
-        justify-content: space-between;
-        place-items: center;
+        grid-template-rows: 40% 2fr 1fr 1fr;
+        gap: 20px; /*order should be: menu-icon, logo, content, search, login.*/
         left: 0px;
 
-        background-color: black;
+        background-color: #151a1d;
         color: white;
         height: 100vh;
         width: 175px;
         text-align: center;
         overflow: hidden;
+        box-shadow: 5px 0px 5px 0px rgba(0, 0, 0, 0.25);
     }
     .navlinks{
         padding: 0
@@ -37,37 +40,105 @@ body{
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        padding: 0
+        padding: 1rem 0;
     }
-    nav ul li a, nav a{
+    nav ul li a, nav a, .submenu{
         color: #fff;
         width: 175px;
         display: block;
-        padding: 10px 0;
     }
     /*The section for the profile - should have log in/out and a link to profile page.*/
-    #profilesection{
+    #profilesection, #tasksection, #linkssection{
         display: flex;
         flex-direction: column;
+        justify-content: center; /* centers vertically */
+        align-items: center;     /* centers horizontally */
+        height: 100%;            /* ensures it fills its row */
+        padding: 1rem 0;
         gap: 10px;
+    }
+    .logbutton{
+        margin: 0 auto;
+    }
+/*containers - mostly divs.*/
+    /*The top section of the home page.*/
+        #featured{
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-height: 75vh;
+        }
+        #featured :not(#featured img){
+            padding: 1rem;
+            padding-left: 5%;
+            background-color: #000000ab;
+        }
+        #featured h2{
+            text-align: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            color: white;
+            z-index: 1;
+        }
+        #featured img{
+            z-index: 0;
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            object-position: top;
+        }
+        #featured p{
+            text-overflow: ellipsis;
+            position: absolute;
+            z-index: 1;
+            color: white;
+            bottom: 3px;
+            width: 100%;
+        }
+        #calendar{
+            width: 25%;
+            height: 100%;
+        }
+    /*For sections that shouldn't be riht next to the nav.*/
+    .padded{
+        padding: 0px 5%;
+    }
+/*footer*/
+    footer{
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        align-items: top;
+        background-color: #151a1d;
+        color: white;
+        bottom: 0px;
+        padding: 2rem 5%;
+    }
+    footer ul a{
+        color: #fff;
+        text-decoration: underline;
     }
 /*the log in / register forms*/
     form{
+        width: 50%;
         display: flex;
+        height: 80vh;
         flex-direction: column;
+        margin:auto
     }
     form *{
         padding: 1rem;
     }
 /*fonts*/
     /*font families*/
-    #epictext, h1, nav, nav li a, .logbutton{
+    #epictext, h1,  nav, nav li a, nav a:not(#thezine), .submenu, .logbutton{
         font-family: 'League Gothic';
     }
-    h2, h3, h4, h5, p, a, button, form, form input{
+    h2,h3, h4, h5, p:not(footer *), a, button, form, form input, #submitLogin{
         font-family: 'Inter';
     }
-    h6, .small{
+    h6, .small, footer, footer *{
         font-family: 'IBM Plex Mono';
     }
     /*font sizes*/
@@ -75,16 +146,16 @@ body{
         text-transform: uppercase;
         font-size: 4rem;
     }
-    h2{
+    h2, #navToggle{
         font-size: 3rem;
     }
     h3{
         font-size: 2rem;
     }
-    h4, nav a, nav li{
+    h4, nav a, nav li, .submenu, nav{
         font-size: 1.7rem;
     }
-    h5, .logbutton{
+    h5, .logbutton, #submitLogin{
         font-size: 1.3rem;
     }
     h6{
@@ -104,19 +175,28 @@ body{
         text-decoration: none;
         list-style: none;
     }
-    #thezine{
+    #thezine {
         text-align: left;
-        font-size: 90px;
+        font-size: 75px;
         line-height: 175px;
-        letter-spacing: 2px;
         text-decoration: none;
         writing-mode: vertical-rl;
         text-orientation: sideways;
         color: white;
         text-transform: uppercase;
-        transform: rotate(180deg) scaleX(3);
+        transform: rotate(180deg) scaleX(3.2);
     }
 /*buttons or links styled to look like buttons*/
+#navToggle{
+    width: 40px;
+    height: 40px;
+    display: none;
+    background-color: #151a1d;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+}
 .logbutton{
     display: block;
     aspect-ratio: 3/1;
@@ -124,7 +204,25 @@ body{
     background-color: #fff;
     color: black;
     padding: 10px;
+    margin-bottom: 1rem;
+}
+#logout{
+    display: block;
+    aspect-ratio: 3/1;
+    width: 125px;
+    background-color: #fff;
+    color: black;
+    padding: 10px;
+    margin-bottom: 1rem;
+    border: none;
 }
 #submitLogin{
-    
+    text-transform: uppercase;
+    color: black;
+    background-color: #fff;
+    border: none;
+    margin-top: 2rem;
+    aspect-ratio: 5/1;
+    width: 33%;
+    margin-left: 25%;
 }
