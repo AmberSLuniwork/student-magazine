@@ -1,26 +1,16 @@
 [
     {
         "userID" : 1,
-        "name": "Admin",
-        "email": "Admin@example.com",
+        "name": "admin",
+        "email": "admin@example.com",
         "password": "adminpassword",
         "accountDate" : "2024-01-10",
-        "isWriter" : false,
         "isAdmin" : true
     },
     {
-        "userID" : 2,
-        "name": "John Doe",
-        "email": "JohnD@example.com",
-        "password": "writerpassword",
-        "accountDate" : "2025-01-10",
-        "isWriter" : true,
-        "isAdmin" : false
-    },
-    {
         "userID" : 3,
-        "name": "Jane Doe",
-        "email": "JaneD@example.com",
+        "name": "reader",
+        "email": "reader@example.com",
         "password": "readerpassword",
         "accountDate" : "2024-01-10",
         "isWriter" : false,

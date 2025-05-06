@@ -1,5 +1,6 @@
 @media (prefers-reduced-motion: reduce){
     *{
+        /*fade in or slide in animations can cause motion sickness too*/
         animation: none;
         /*parallax can cause motion sickness*/
         background-attachment: scroll;
@@ -9,39 +10,62 @@
 .show{
     opacity: 1;
 }
-main, footer{
-    transition: ease 0.5s;
-}
+
 nav{
-    transition: ease 0.5s;
-}
-nav .logbutton{
-    transition: ease 0.2s;
-    
+    transition: 0.25s ease;
 }
 
 nav ul li:hover, .submenu:hover, nav a:not(#thezine):not(.logbutton):hover{
-    background-color: #ad0000;
+    background-color: #5e3277;
     transform: scale(1.1);
     letter-spacing: 1px;
-    transition: 0.2s;
 }
 nav .logbutton:hover{
-    background-color: rgb(117, 117, 117);
+    box-shadow: 0 0 10px #000000;
+    transform: scale(1.1);
     cursor: pointer;
-}
-#thezine{
-    transition: 0.1s ease-in;
 }
 #thezine:hover{
     letter-spacing: 5px;
 }
-
+#featured a img{
+    transition: ease-in 0.2s;
+}
+#featured a img:hover{
+    transform: scale(1.05);
+    
+}
+.cardLink *{
+    transition: ease 0.5s;
+}
+.cardLink *:not(.cardLink h3):not(.cardLink p):hover{
+    transform: scale(1.01);
+    box-shadow: 0 0 10px #000000;
+}
+#submitArticle:hover{
+    animation: shake 0.1s;
+    animation-iteration-count: infinite;
+}
 /*buttons*/
 #navToggle{
     cursor: pointer;
     transition: ease 0.5s;
 }
-#navToggle.flip{
+#navToggle.flip {
     transform:scaleX(-1);
+}
+
+/*animations*/
+@keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
 }

@@ -5,7 +5,7 @@
     },
     {
         "tagID": 2,
-        "name": "Productivity"
+        "name": "Music"
     },
     {
         "tagID": 3,
@@ -21,22 +21,26 @@
     },
     {
         "tagID": 6,
-        "name": "Events"
+        "name": "Entertainment"
     },
     {
         "tagID": 7,
-        "name": "Sustainability"
-    },
-    {
-        "tagID": 8,
         "name": "Opinions"
     },
     {
-        "tagID": 9,
+        "tagID": 8,
         "name": "Food"
     },
     {
-        "tagID": 10,
+        "tagID": 9,
         "name": "Fashion"
+    },
+    {
+        "tagID": 10,
+        "name": "Technology"
+    },
+    {
+        "tagID":11,
+        "name": "Careers"
     }
 ]

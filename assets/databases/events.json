@@ -1,0 +1,173 @@
+[
+    {
+        "eventID": 1,
+        "title": "Music Festival",
+        "description": "A grand music festival featuring top artists and bands.",
+        "date": "2025-06-15",
+        "time": "15:00",
+        "location": "City Park",
+        "tags": [2]
+    },
+    {
+        "eventID": 2,
+        "title": "Coding Workshop",
+        "description": "A workshop for beginner programmers to learn web development.",
+        "date": "2025-06-20",
+        "time": "10:00",
+        "location": "Tech Hub",
+        "tags": [1, 10]
+    },
+    {
+        "eventID": 3,
+        "title": "Art Exhibition",
+        "description": "An exhibition showcasing local artists.",
+        "date": "2025-07-01",
+        "time": "18:00",
+        "location": "City Art Gallery",
+        "tags": [3, 6]
+    },
+    {
+        "eventID": 4,
+        "title": "Food Truck Festival",
+        "description": "A collection of the best food trucks from around the city.",
+        "date": "2025-07-05",
+        "time": "12:00",
+        "location": "Downtown Square",
+        "tags": [8]
+    },
+    {
+        "eventID": 5,
+        "title": "Yoga in the Park",
+        "description": "Join us for a morning of relaxation and mindfulness.",
+        "date": "2025-07-10",
+        "time": "08:00",
+        "location": "Central Park",
+        "tags": [4]
+    },
+    {
+        "eventID": 6,
+        "title": "Summer Beach Party",
+        "description": "A fun-filled evening on the beach with music, dancing, and games.",
+        "date": "2025-07-12",
+        "time": "17:00",
+        "location": "Sunny Beach",
+        "tags": [6, 2]
+    },
+    {
+        "eventID": 7,
+        "title": "Public Speaking Seminar",
+        "description": "Learn the art of public speaking from experts.",
+        "date": "2025-07-15",
+        "time": "09:00",
+        "location": "Community Center",
+        "tags": [11]
+    },
+    {
+        "eventID": 9,
+        "title": "Rock Climbing Competition",
+        "description": "Test your climbing skills in a friendly competition.",
+        "date": "2025-07-20",
+        "time": "11:00",
+        "location": "Climbing Gym",
+        "tags": [3]
+    },
+    {
+        "eventID": 10,
+        "title": "Film Screening: Classic Movies",
+        "description": "Watch some of the greatest films from cinema history.",
+        "date": "2025-07-22",
+        "time": "19:00",
+        "location": "Movie Theater",
+        "tags": [6]
+    },
+    {
+        "eventID": 11,
+        "title": "Photography Workshop",
+        "description": "Learn the basics of photography and composition.",
+        "date": "2025-07-25",
+        "time": "14:00",
+        "location": "Photo Studio",
+        "tags": [6]
+    },
+    {
+        "eventID": 12,
+        "title": "Dance Performance",
+        "description": "A beautiful evening of dance by local performers.",
+        "date": "2025-07-28",
+        "time": "18:30",
+        "location": "Downtown Theater",
+        "tags": [6]
+    },
+    {
+        "eventID": 13,
+        "title": "Baking Competition",
+        "description": "A chance to show off your baking skills and win prizes.",
+        "date": "2025-08-01",
+        "time": "10:00",
+        "location": "Baker's Hall",
+        "tags": [8]
+    },
+    {
+        "eventID": 14,
+        "title": "Science Fair",
+        "description": "Showcase your science projects and experiments.",
+        "date": "2025-08-05",
+        "time": "09:00",
+        "location": "Science Center",
+        "tags": [1]
+    },
+    {
+        "eventID": 15,
+        "title": "Meditation Retreat",
+        "description": "Spend a weekend in peace and quiet, focusing on your well-being.",
+        "date": "2025-08-10",
+        "time": "09:00",
+        "location": "Mountain Resort",
+        "tags": [4]
+    },
+    {
+        "eventID": 16,
+        "title": "Charity Run",
+        "description": "Join us for a run to raise funds for a good cause.",
+        "date": "2025-08-15",
+        "time": "08:00",
+        "location": "Parkway",
+        "tags": [3]
+    },
+    {
+        "eventID": 17,
+        "title": "Wine Tasting Event",
+        "description": "Taste a variety of wines at this exclusive event.",
+        "date": "2025-08-20",
+        "time": "19:00",
+        "location": "Vineyard",
+        "tags": [8]
+    },
+    {
+        "eventID": 18,
+        "title": "Fashion Show",
+        "description": "A runway event featuring the latest in fashion.",
+        "date": "2025-08-25",
+        "time": "20:00",
+        "location": "Fashion Center",
+        "tags": [9]
+    },
+    {
+        "eventID": 19,
+        "title": "Summer Picnic",
+        "description": "A relaxing picnic in the park with games and activities.",
+        "date": "2025-08-30",
+        "time": "12:00",
+        "location": "Green Park",
+        "tags": [4,6]
+    },
+    {
+        "eventID": 20,
+        "title": "Technology Expo",
+        "description": "See the latest innovations in technology and gadgets.",
+        "date": "2025-09-01",
+        "time": "10:00",
+        "location": "Convention Center",
+        "tags": [10]
+    }
+]

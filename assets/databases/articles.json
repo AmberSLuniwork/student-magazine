@@ -1,9 +1,9 @@
 [
     {
         "articleID": 101,
-        "title": "My Roommate Snores: And Other Dorm Realities",
+        "title": "My Dormmate Snores: And Other Dorm Realities",
         "publishDate": "2025-04-20T10:00:00Z",
-        "writerID": 1,
+        "writerName": "Dario Tran",
         "tags": [1],
         "likes": 42,
         "published": true
@@ -12,8 +12,8 @@
         "articleID": 102,
         "title": "Microwave Masterchef: 5 Easy Student Meals That Aren’t Instant Noodles",
         "publishDate": "2025-04-22T08:30:00Z",
-        "writerID": 1,
-        "tags": [9],
+        "writerName": "Dario Tran",
+        "tags": [8],
         "likes": 25,
         "published": true
     },
@@ -21,8 +21,8 @@
         "articleID": 103,
         "title": "Budget Beauty Hacks: Looking Glam on £5 a Week",
         "publishDate": "2025-04-20T11:00:00Z",
-        "writerID": 2,
-        "tags": [10],
+        "writerName": "Hope Garrison",
+        "tags": [9],
         "likes": 34,
         "published": true
     },
@@ -30,8 +30,8 @@
         "articleID": 104,
         "title": "How to Survive Exam Season Without Losing Your Mind",
         "publishDate": "2025-04-18T09:45:00Z",
-        "writerID": 3,
-        "tags": [2, 4],
+        "writerName": "Yamilet Calhoun",
+        "tags": [4],
         "likes": 40,
         "published": true
     },
@@ -39,16 +39,16 @@
         "articleID": 105,
         "title": "Society Secrets: What Actually Happens in the Drama Club?",
         "publishDate": "2025-04-15T17:10:00Z",
-        "writerID": 1,
+        "writerName": "Destiney Ellison",
         "tags": [5],
         "likes": 19,
         "published": true
     },
     {
         "articleID": 106,
-        "title": "The Freshers' Guide to Surviving First Year",
+        "title": "University and you: the fresher's crash course",
         "publishDate": "2025-04-12T13:00:00Z",
-        "writerID": 4,
+        "writerName": 4,
         "tags": [1],
         "likes": 56,
         "published": true
@@ -57,8 +57,8 @@
         "articleID": 107,
         "title": "From Dorm Room to Dance Floor: Uni Nightlife Essentials",
         "publishDate": "2025-04-10T20:00:00Z",
-        "writerID": 2,
-        "tags": [6],
+        "writerName": "Walter Mejia",
+        "tags": [1],
         "likes": 21,
         "published": false
     },
@@ -66,8 +66,8 @@
         "articleID": 108,
         "title": "10 Things You Only Learn in a Shared Kitchen",
         "publishDate": "2025-04-08T08:00:00Z",
-        "writerID": 5,
-        "tags": [9, 1],
+        "writerName": "Aimee Taylor",
+        "tags": [8, 1],
         "likes": 29,
         "published": false
     },
@@ -75,7 +75,7 @@
         "articleID": 109,
         "title": "Flatmate Horror Stories That’ll Make You Grateful",
         "publishDate": "2025-04-05T22:15:00Z",
-        "writerID": 3,
+        "writerName": "Charlize Jenkins",
         "tags": [5, 4],
         "likes": 37,
         "published": false
@@ -84,8 +84,8 @@
         "articleID": 110,
         "title": "Sustainability on Campus: Small Changes, Big Impact",
         "publishDate": "2025-04-03T07:30:00Z",
-        "writerID": 4,
-        "tags": [7],
+        "writerName": "Kaelyn Martinez",
+        "tags": [1],
         "likes": 45,
         "published": true
     },
@@ -93,8 +93,8 @@
         "articleID": 111,
         "title": "Is University Worth It? Students Sound Off",
         "publishDate": "2025-04-01T15:00:00Z",
-        "writerID": 5,
-        "tags": [8],
+        "writerName": "Charlize Jenkins",
+        "tags": [7],
         "likes": 52,
         "published": true
     }

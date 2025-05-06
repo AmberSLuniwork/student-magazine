@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Styles-->
+    <link rel="stylesheet" href="/assets/styles/style.css">
+    <link rel="stylesheet" href="/assets/styles/animation.css">
+    <link rel="stylesheet" href="/assets/styles/mobile.css">
+    <!--Scripts-->
+    <script type="module" src="/assets/scripts/templates.js"></script>
+    <script defer src="/assets/scripts/animations.js"></script>
+    <script type="module" src="/assets/scripts/buttons.js"></script>
+    <script type="module" src="/assets/scripts/login.js"></script>
+    <!--Font imports-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Gothic&display=swap');
+    </style>
+    <title>Credits</title>
+
+    <!--I'd normally style in a sheet, but this is only for one page.-->
+    <style>
+        .creditcontainer {
+            overflow: hidden;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px;
+            gap: 1rem;
+        }
+        .creditcontainer *{
+            width: 100%;
+            text-align: center;
+        }
+        article img{
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <main>
+        <h1 style="text-align: right;">Image credits</h1>
+        <section class="creditcontainer">
+            <article>
+                <img src="/assets/images/sincerely-media-dGxOgeXAXm8-unsplash.jpg">
+                <p>
+                    Photo by <a href="https://unsplash.com/@sincerelymedia?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sincerely Media</a> 
+                    on <a href="https://unsplash.com/photos/woman-reading-book-dGxOgeXAXm8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </article>
+            <article>
+                <img src="assets\images\david-schultz-kM97y3aWWQw-unsplash.jpg">
+                <p>
+                    Photo by <a href="https://unsplash.com/@davidschultz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Schultz</a> on <a href="https://unsplash.com/photos/people-walking-on-a-path-in-a-park-kM97y3aWWQw?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </article>
+            <article>
+                <img src="assets\images\david-schultz-7ZDPyv20DOg-unsplash.jpg">
+                <p>
+                    Photo by <a href="https://unsplash.com/@davidschultz?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">David Schultz</a> on <a href="https://unsplash.com/photos/a-person-sits-by-a-window-gazing-outside-7ZDPyv20DOg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </article>
+            <article>
+                <img src="/assets/images/sneha-thomas-48GuebS9iKQ-unsplash.jpg">
+                <p>
+                    Photo by <a href="https://unsplash.com/@yujinphy?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Sneha Thomas</a> on <a href="https://unsplash.com/photos/a-woman-standing-on-the-steps-of-a-building-48GuebS9iKQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+                </p>
+            </article>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+</html>

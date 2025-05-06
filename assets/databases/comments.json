@@ -1,0 +1,156 @@
+[
+    {
+        "commentID": 1,
+        "content": "This is great advice! I wish I had known this before starting university.",
+        "articleID": 101,
+        "userID": 3,
+        "postDate": "2025-04-21T12:00:00Z"
+    },
+    {
+        "commentID": 2,
+        "content": "Really useful tips, thanks for sharing!",
+        "articleID": 101,
+        "userID": 4,
+        "postDate": "2025-04-21T13:05:00Z"
+    },
+    {
+        "commentID": 3,
+        "content": "I completely agree with this. Uni life can be overwhelming at first.",
+        "articleID": 101,
+        "userID": 5,
+        "postDate": "2025-04-21T14:12:00Z"
+    },
+    {
+        "commentID": 4,
+        "content": "Can confirm! Getting involved with societies helped me meet people.",
+        "articleID": 101,
+        "userID": 6,
+        "postDate": "2025-04-21T15:30:00Z"
+    },
+    {
+        "commentID": 5,
+        "content": "Wish I’d seen this before Freshers' Week 😅",
+        "articleID": 101,
+        "userID": 7,
+        "postDate": "2025-04-21T16:45:00Z"
+    },
+    {
+        "commentID": 6,
+        "content": "Solid advice. Especially the part about asking for help when you need it.",
+        "articleID": 101,
+        "userID": 3,
+        "postDate": "2025-04-21T17:10:00Z"
+    },
+    {
+        "commentID": 7,
+        "content": "Love this! Uni can be scary but also really exciting.",
+        "articleID": 101,
+        "userID": 8,
+        "postDate": "2025-04-21T18:22:00Z"
+    },
+    {
+        "commentID": 8,
+        "content": "Could you do a follow-up on budgeting tips?",
+        "articleID": 101,
+        "userID": 9,
+        "postDate": "2025-04-21T19:03:00Z"
+    },
+    {
+        "commentID": 9,
+        "content": "Definitely bookmarking this for when term starts.",
+        "articleID": 101,
+        "userID": 4,
+        "postDate": "2025-04-21T20:11:00Z"
+    },
+    {
+        "commentID": 10,
+        "content": "A friend sent this to me — so glad they did!",
+        "articleID": 101,
+        "userID": 10,
+        "postDate": "2025-04-21T21:30:00Z"
+    },
+    {
+        "commentID": 11,
+        "content": "Thanks for the reassurance. I’ve been feeling really nervous.",
+        "articleID": 101,
+        "userID": 11,
+        "postDate": "2025-04-21T22:14:00Z"
+    },
+    {
+        "commentID": 12,
+        "content": "Some great reminders here. You really nailed the tone.",
+        "articleID": 101,
+        "userID": 5,
+        "postDate": "2025-04-21T23:20:00Z"
+    },
+    {
+        "commentID": 13,
+        "content": "Would love a version of this for mature students.",
+        "articleID": 101,
+        "userID": 12,
+        "postDate": "2025-04-22T00:15:00Z"
+    },
+    {
+        "commentID": 14,
+        "content": "Good read! I’d add that getting enough sleep is key too.",
+        "articleID": 101,
+        "userID": 13,
+        "postDate": "2025-04-22T01:00:00Z"
+    },
+    {
+        "commentID": 15,
+        "content": "I’m printing this out for my noticeboard.",
+        "articleID": 101,
+        "userID": 14,
+        "postDate": "2025-04-22T02:22:00Z"
+    },
+    {
+        "commentID": 16,
+        "content": "Really speaks to me. It’s easy to forget everyone else feels the same way.",
+        "articleID": 101,
+        "userID": 6,
+        "postDate": "2025-04-22T03:45:00Z"
+    },
+    {
+        "commentID": 17,
+        "content": "This is so relevant right now. Just moved into halls!",
+        "articleID": 101,
+        "userID": 15,
+        "postDate": "2025-04-22T04:31:00Z"
+    },
+    {
+        "commentID": 18,
+        "content": "Thank you for being real about the ups and downs.",
+        "articleID": 101,
+        "userID": 16,
+        "postDate": "2025-04-22T05:50:00Z"
+    },
+    {
+        "commentID": 19,
+        "content": "Some of the best advice I’ve read this week.",
+        "articleID": 101,
+        "userID": 17,
+        "postDate": "2025-04-22T06:40:00Z"
+    },
+    {
+        "commentID": 20,
+        "content": "I’d forgotten how scary that first week can feel.",
+        "articleID": 101,
+        "userID": 18,
+        "postDate": "2025-04-22T07:12:00Z"
+    },
+    {
+        "commentID": 21,
+        "content": "Could this be made into a short video too?",
+        "articleID": 101,
+        "userID": 19,
+        "postDate": "2025-04-22T08:00:00Z"
+    },
+    {
+        "commentID": 22,
+        "content": "This should be required reading for freshers 😄",
+        "articleID": 101,
+        "userID": 20,
+        "postDate": "2025-04-22T09:10:00Z"
+    }
+]

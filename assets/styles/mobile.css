@@ -1,4 +1,19 @@
 @media screen and (max-width: 768px) {
+    h1{
+        font-size: 3.5rem;
+    }
+    h2{
+        font-size: 2.5rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    .small{
+        font-size: .7rem;
+    }
+    .big{
+        font-size: 2.5rem;
+    }
     /*menu adjustments*/
     main, footer{
         margin-left: 40px;
@@ -6,15 +21,22 @@
     footer{
         flex-direction: column;
     }
-    nav{
+    nav {
         z-index: 10;
+        height: 100vh;
         transform: translateX(-175px);
         width: 215px;
-        grid-template-columns: 3fr 40px;
-        grid-template-rows: 50% 2fr 1fr 1fr; /*order should be: logo, content, search, login.*/
+        grid-template-columns: 175px 40px;
+        grid-template-rows: 1fr 2fr 1fr 1fr; /*order should be: logo, content, search, login.*/
+        place-items: center;
+        gap: 0;
     }
-    #navToggle, #navToggle *{
+    #thezine{
+        grid-row: 1;
+    }
+    #navToggle, #navToggle * {
         display: block;
+        transform: translateX(0px);
     }
     nav.open nav *:not(#navToggle){
         display: block;
@@ -22,9 +44,14 @@
     nav *, #thezine{
         display: none;
     }
-    #thezine{
-        grid-row: 1;
-        grid-column: 1;
+    nav.open #thezine {
+        display: block;
+        writing-mode: horizontal-tb;
+        line-height: 4rem;
+        font-size: 3rem;
+        transform: none;
+        text-align: center;
+        /*! vertical-align: top; */
     }
     #navToggle{
         grid-row: span 5;
@@ -33,11 +60,19 @@
     }
     nav.open{
         transform: translateX(0);
+        min-height: fit-content;
+        max-height: 100vh;
     }
     nav.open *{
         display: block;
+        overflow: hidden;
     }
     nav.open #thezine{
         display: block;
+    }
+    #submitArticleForm .checkboxColumns{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
     }
 }

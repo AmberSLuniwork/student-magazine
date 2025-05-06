@@ -2,15 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 button{
     border: none;
+}
+main{
+    padding-bottom: 5rem;
 }
 main, footer{
     margin-left: 175px;
 }
 body{
-    background-color: #fff ;
+    background-color: #FFFCF9 ;
+    color: #041F1E;
 }
 /*Nav and nav-related items*/
     nav, nav *{
@@ -19,12 +25,13 @@ body{
 
     nav{
         position: fixed;
+        top: 0px;
         display: grid;
         grid-template-rows: 40% 2fr 1fr 1fr;
         gap: 20px; /*order should be: menu-icon, logo, content, search, login.*/
         left: 0px;
 
-        background-color: #151a1d;
+        background-color: #975CB8;
         color: white;
         height: 100vh;
         width: 175px;
@@ -41,6 +48,12 @@ body{
         flex-direction: column;
         justify-content: space-evenly;
         padding: 1rem 0;
+        width: 175px;
+    }
+    nav ul li{
+        line-height: 2rem;
+        width: 175px;
+        display: block;
     }
     nav ul li a, nav a, .submenu{
         color: #fff;
@@ -59,50 +72,57 @@ body{
     }
     .logbutton{
         margin: 0 auto;
+        overflow: hidden;
     }
 /*containers - mostly divs.*/
-    /*The top section of the home page.*/
-        #featured{
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            max-height: 75vh;
-        }
-        #featured :not(#featured img){
-            padding: 1rem;
-            padding-left: 5%;
-            background-color: #000000ab;
-        }
-        #featured h2{
-            text-align: left;
-            position: absolute;
-            top: 0;
-            left: 0;
-            color: white;
-            z-index: 1;
-        }
-        #featured img{
-            z-index: 0;
-            width: 100%;
-            height: auto;
-            object-fit: contain;
-            object-position: top;
-        }
-        #featured p{
-            text-overflow: ellipsis;
-            position: absolute;
-            z-index: 1;
-            color: white;
-            bottom: 3px;
-            width: 100%;
-        }
-        #calendar{
-            width: 25%;
-            height: 100%;
-        }
-    /*For sections that shouldn't be riht next to the nav.*/
+#frontCover{
+    background-image: url(/assets/images/laura-d-vargas-1SdQor4_bec-unsplash.jpg);
+    height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 50%;
+}
+#frontCover div{
+    position: absolute;
+    color: #FFFCF9;
+    background-color: #0000009d; 
+    width: fit-content; 
+    padding: 2rem;
+}
+.bigCard{
+    height: 50vh;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background-image: url(/assets/images/david-schultz-kM97y3aWWQw-unsplash.jpg);
+}
+.bigCard h3{
+    position: absolute;
+    padding: 1rem;
+    color: #FFFCF9;
+    background-color: #151a1db0;
+    width: 100%;
+}
+.bigCard p{
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+    color: #FFFCF9;
+    background-color: #151a1db0;
+    width: 100%;
+}
+    #whatsOn{
+        padding: 25px;
+        grid-column: 2;
+        grid-row: 2 / span 2;
+    }
+    #eventContainer{
+        overflow-y: scroll;
+    }
+    /*For sections that shouldn't be right next to the nav.*/
     .padded{
-        padding: 0px 5%;
+        padding: 5rem 5%;
     }
 /*footer*/
     footer{
@@ -119,110 +139,145 @@ body{
         color: #fff;
         text-decoration: underline;
     }
-/*the log in / register forms*/
+/*the log in / register / submit article forms*/
     form{
         width: 50%;
         display: flex;
-        height: 80vh;
         flex-direction: column;
-        margin:auto
+        margin:auto;
+        margin-bottom: 5rem;
     }
     form *{
         padding: 1rem;
     }
+    form input, fieldset, textarea{
+        border: #975CB8 solid 2px
+    }
 /*fonts*/
     /*font families*/
-    #epictext, h1,  nav, nav li a, nav a:not(#thezine), .submenu, .logbutton{
-        font-family: 'League Gothic';
-    }
-    h2,h3, h4, h5, p:not(footer *), a, button, form, form input, #submitLogin{
-        font-family: 'Inter';
-    }
-    h6, .small, footer, footer *{
-        font-family: 'IBM Plex Mono';
-    }
+        p.listheader, h1,  nav, nav li a, nav a:not(#thezine), .submenu, .logbutton, #submitArticle{
+            font-family: 'League Gothic';
+        }
+        h2,h3, h4, h5, p:not(footer *), a, button, form, form input, #submitLogin, input{
+            font-family: 'Inter';
+        }
+        h6, .small, footer, footer *, footer h2{
+            font-family: 'IBM Plex Mono';
+        }
     /*font sizes*/
-    h1{
-        text-transform: uppercase;
-        font-size: 4rem;
-    }
-    h2, #navToggle{
-        font-size: 3rem;
-    }
-    h3{
-        font-size: 2rem;
-    }
-    h4, nav a, nav li, .submenu, nav{
-        font-size: 1.7rem;
-    }
-    h5, .logbutton, #submitLogin{
-        font-size: 1.3rem;
-    }
-    h6{
-        font-style: italic;
-        font-size: 1rem;
-    }
-    p, form{
-        font-weight: 400;
-        font-size: 1.2rem;
-    }
-    .small{
-        font-weight: light;
-        font-size: .8rem;
-    }
+        .huge{
+            font-size: 6rem;
+            margin-bottom: 3rem;
+        }
+        h1{
+            text-transform: uppercase;
+            font-size: 4rem;
+            margin-bottom: 6rem;
+        }
+        h2, #navToggle, .big{
+            font-size: 3rem;
+        }
+        p.listheader,h3{
+            font-size: 2rem;
+        }
+        h4, nav a, nav li, .submenu, nav, .featuredCard h3:not(.featuredCard.important h3){
+            font-size: 1.7rem;
+        }
+        h5, .logbutton, #submitLogin, footer h2{
+            font-size: 1.3rem;
+        }
+        h6{
+            font-style: italic;
+            font-size: 1rem;
+        }
+        p, form{
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+        
+        .small{
+            font-weight: light;
+            font-size: .8rem;
+        }
+    /*font styles*/
+        .whitetext{
+            color: #FFFCF9;
+        }
+        .right{
+            text-align: right;
+        }
+        .big{
+            font-weight: 800;
+        }
     /*special text - logo, lists etc*/
-    .nodeco, .logbutton, nav a{
-        text-decoration: none;
-        list-style: none;
-    }
-    #thezine {
-        text-align: left;
-        font-size: 75px;
-        line-height: 175px;
-        text-decoration: none;
-        writing-mode: vertical-rl;
-        text-orientation: sideways;
-        color: white;
-        text-transform: uppercase;
-        transform: rotate(180deg) scaleX(3.2);
-    }
+        .nodeco, .logbutton, nav a{
+            text-decoration: none;
+            list-style: none;
+        }
+        #thezine {
+            text-align: left;
+            font-size: 75px;
+            line-height: 175px;
+            text-decoration: none;
+            writing-mode: vertical-rl;
+            text-orientation: sideways;
+            color: white;
+            text-transform: uppercase;
+            transform: rotate(180deg) scaleX(3.2);
+        }
+        p.listheader{
+            display:block;
+            width:100%
+        }
 /*buttons or links styled to look like buttons*/
-#navToggle{
-    width: 40px;
-    height: 40px;
-    display: none;
-    background-color: #151a1d;
-    color: #ffffff;
-    border: none;
-    text-align: center;
-    vertical-align: middle;
-}
-.logbutton{
-    display: block;
-    aspect-ratio: 3/1;
-    width: 125px;
-    background-color: #fff;
-    color: black;
-    padding: 10px;
-    margin-bottom: 1rem;
-}
-#logout{
-    display: block;
-    aspect-ratio: 3/1;
-    width: 125px;
-    background-color: #fff;
-    color: black;
-    padding: 10px;
-    margin-bottom: 1rem;
-    border: none;
-}
-#submitLogin{
-    text-transform: uppercase;
-    color: black;
-    background-color: #fff;
-    border: none;
-    margin-top: 2rem;
-    aspect-ratio: 5/1;
-    width: 33%;
-    margin-left: 25%;
-}
+    #navToggle{
+        width: 40px;
+        height: 40px;
+        display: none;
+        background-color: #00000000;
+        color: #ffffff;
+        border: none;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .logbutton{
+        display: block;
+        aspect-ratio: 3/1;
+        width: 125px;
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+        margin-bottom: 1rem;
+    }
+    #logout{
+        display: block;
+        aspect-ratio: 3/1;
+        width: 125px;
+        background-color: #fff;
+        color: black;
+        padding: 10px;
+        margin-bottom: 1rem;
+        border: none;
+    }
+    #submitLogin{
+        text-transform: uppercase;
+        color: black;
+        background-color: #fff;
+        border: none;
+        margin-top: 2rem;
+        aspect-ratio: 5/1;
+        width: 33%;
+        margin-left: 25%;
+    }
+    #submitArticle{
+        font-size: clamp(2rem, 5vw, 4rem);
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFCF9;
+        background-color: #975CB8;
+        border: none;
+        margin-top: 2rem;
+        aspect-ratio: 5/1;
+        width: 100%;
+        min-height: 100px;
+    }
