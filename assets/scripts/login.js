@@ -34,17 +34,12 @@ window.addEventListener("DOMContentLoaded", () => {
             const userName = sessionStorage.getItem("userName");
             const userRole = sessionStorage.getItem("userRole");
 
-            //console.log("isLoggedIn:", isLoggedIn);
-            //console.log("userName:", userName);
-            //console.log("userRole:", userRole);
-
             if (loginButton && logoutButton) {
                 if (isLoggedIn) {
                     console.log("User is logged in");
 
                     loginButton.style.display = 'none';
                     logoutButton.style.display = 'block';
-
                     if (welcomeUser && userName) {
                         welcomeUser.textContent = `Hi ${userName}!`;
                         welcomeUser.style.display = "block";
@@ -53,7 +48,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     if (taskSection && userRole === "admin") {
                         console.log("User is admin, adding admin link");
 
-                        // Avoid duplicates
                         const existingAdminLink = document.querySelector("#tasksection a[href='/admin/hub.html']");
                         if (!existingAdminLink) {
                             const adminLink = document.createElement("a");
@@ -71,7 +65,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     if (welcomeUser) welcomeUser.textContent = '';
                 }
             }
-
             if (logoutButton) {
                 logoutButton.addEventListener('click', (event) => {
                     event.preventDefault();
@@ -88,7 +81,6 @@ window.addEventListener("DOMContentLoaded", () => {
                     alert("Logged out successfully!");
                 });
             }
-
             const logForm = document.getElementById("logForm");
             if (logForm) {
                 logForm.addEventListener("submit", async (event) => {
@@ -96,24 +88,17 @@ window.addEventListener("DOMContentLoaded", () => {
                     const email = document.getElementById("email").value;
                     const password = document.getElementById("password").value;
 
-                    try {
-                        const response = await fetch("assets/databases/users.json");
-                        const users = await response.json();
-                        const user = users.find(u => u.email === email && u.password === password);
-
-                        if (user) {
-                            sessionStorage.setItem("loggedIn", "true");
-                            sessionStorage.setItem("userName", user.name);
-                            sessionStorage.setItem("userRole", user.isAdmin ? "admin" : user.isWriter ? "writer" : "reader");
-
-                            alert("Login successful!");
-                            window.location.href = "index.html";
-                        } else {
-                            alert("Invalid email or password. Please try again.");
-                        }
-                    } catch (error) {
-                        console.error("Error loading user data:", error);
-                        alert("An error occurred while trying to log in.");
+                    const response = await fetch("assets/databases/users.json");
+                    const users = await response.json();
+                    const user = users.find(u => u.email === email && u.password === password);
+                    if (user) {
+                        sessionStorage.setItem("loggedIn", "true");
+                        sessionStorage.setItem("userName", user.name);
+                        sessionStorage.setItem("userRole", user.isAdmin ? "admin" : "reader");
+                        alert("Login successful!");
+                        window.location.href = "index.html";
+                    } else {
+                        alert("Invalid email or password. Please try again.");
                     }
                 });
             }

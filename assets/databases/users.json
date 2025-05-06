@@ -13,7 +13,6 @@
         "email": "reader@example.com",
         "password": "readerpassword",
         "accountDate" : "2024-01-10",
-        "isWriter" : false,
         "isAdmin" : false
     }
 ]
